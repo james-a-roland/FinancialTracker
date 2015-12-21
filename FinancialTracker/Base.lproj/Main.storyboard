@@ -1,26 +1,135 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SmE-LY-dxU">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Item-->
+        <scene sceneID="Lay-Jd-gJ2">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FinancialTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="MMU-i9-NEA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="CF8-t0-eaC"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hld-we-fMw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="rwE-MQ-2U3" kind="relationship" relationship="rootViewController" id="jjX-Hy-Hyk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lkM-3K-ZiH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="505" y="1067"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="waD-5h-BOI">
+            <objects>
+                <navigationController id="WDK-AV-xy6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="RVO-WC-puU"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="joK-1e-Hjb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="PPe-9t-Nm7" kind="relationship" relationship="rootViewController" id="gQk-1t-JW9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ng-7s-Yu0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="505" y="357"/>
+        </scene>
+        <!--Summary View Controller-->
+        <scene sceneID="sD2-o6-7PL">
+            <objects>
+                <viewController id="PPe-9t-Nm7" customClass="SummaryViewController" customModule="FinancialTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="Rjg-RU-bD6"/>
+                        <viewControllerLayoutGuide type="bottom" id="AJB-vs-iaa"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="AZf-AK-AmG">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pl5-qF-4qJ">
+                                <rect key="frame" x="-11" y="-46" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="AO6-Ba-8JW">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="organize" id="zFU-EU-kNL"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="JkU-Cr-tRS">
+                            <rect key="frame" x="180" y="7" width="240" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="First"/>
+                                <segment title="Second"/>
+                            </segments>
+                        </segmentedControl>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="8GX-oD-u8T"/>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sCc-vC-jeZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1230" y="357"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ufZ-jg-We2">
+            <objects>
+                <tabBarController id="SmE-LY-dxU" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="d9T-1y-vHx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="WDK-AV-xy6" kind="relationship" relationship="viewControllers" id="6ZR-Aq-tvy"/>
+                        <segue destination="MMU-i9-NEA" kind="relationship" relationship="viewControllers" id="aky-tY-78m"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="knw-q6-FnD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-272" y="725"/>
+        </scene>
+        <!--Comparison View Controller-->
+        <scene sceneID="J5E-AZ-5v2">
+            <objects>
+                <viewController id="rwE-MQ-2U3" customClass="ComparisonViewController" customModule="FinancialTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HcE-3a-mze"/>
+                        <viewControllerLayoutGuide type="bottom" id="3yc-oS-4ST"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tbu-CI-Idu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Va-Tu-XHq" customClass="Compa">
+                                <rect key="frame" x="-11" y="-46" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="h0U-Jn-ZMC">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="organize" id="Imw-IE-Rh6"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="Vcm-xg-eYV">
+                            <rect key="frame" x="180" y="7" width="240" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Third"/>
+                                <segment title="Fourth"/>
+                            </segments>
+                        </segmentedControl>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ajL-Z7-neP"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5FF-Rl-rwL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1230" y="1067"/>
         </scene>
     </scenes>
 </document>
