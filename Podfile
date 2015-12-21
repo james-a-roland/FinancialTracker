@@ -3,6 +3,8 @@
 
 target 'FinancialTracker' do
 
+pod 'XYPieChart'
+
 end
 
 target 'FinancialTrackerTests' do

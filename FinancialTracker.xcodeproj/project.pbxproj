@@ -159,6 +159,8 @@
 		4CB3601F1C248E3500B53EE0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "James Roland";
 				TargetAttributes = {
@@ -415,6 +417,7 @@
 				4CB3604B1C248E3500B53EE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CB3604C1C248E3500B53EE0 /* Build configuration list for PBXNativeTarget "FinancialTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +426,7 @@
 				4CB3604E1C248E3500B53EE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
