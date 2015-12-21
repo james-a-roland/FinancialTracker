@@ -14,5 +14,12 @@ class ComparisonViewController : TabViewController {
 }
 
 extension ComparisonViewController {
-  
+
+  @IBAction func addNewTransaction(sender: AnyObject) {
+    super.addNewTransaction()
+  }
+
+  @IBAction func presentSettingsViewController(sender: AnyObject) {
+    super.presentSettingsViewController()
+  }
 }

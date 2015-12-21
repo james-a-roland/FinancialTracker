@@ -11,8 +11,18 @@ import UIKit
 
 class SummaryViewController : TabViewController {
 
+
+
+  
 }
 
 extension SummaryViewController {
+
+  @IBAction func addNewTransaction(sender: AnyObject) {
+    super.addNewTransaction()
+  }
   
+  @IBAction func presentSettingsViewController(sender: AnyObject) {
+    super.presentSettingsViewController()
+  }
 }

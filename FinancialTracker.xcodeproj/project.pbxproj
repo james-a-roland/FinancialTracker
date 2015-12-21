@@ -12,7 +12,6 @@
 		4CA261FA1C28AB51009B171D /* ComparisonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA261F91C28AB51009B171D /* ComparisonViewController.swift */; };
 		4CB3602D1C248E3500B53EE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB3602C1C248E3500B53EE0 /* AppDelegate.swift */; };
 		4CB360301C248E3500B53EE0 /* FinancialTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CB3602E1C248E3500B53EE0 /* FinancialTracker.xcdatamodeld */; };
-		4CB360321C248E3500B53EE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB360311C248E3500B53EE0 /* ViewController.swift */; };
 		4CB360351C248E3500B53EE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB360331C248E3500B53EE0 /* Main.storyboard */; };
 		4CB360371C248E3500B53EE0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CB360361C248E3500B53EE0 /* Images.xcassets */; };
 		4CB3603A1C248E3500B53EE0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CB360381C248E3500B53EE0 /* LaunchScreen.xib */; };
@@ -37,7 +36,6 @@
 		4CB3602B1C248E3500B53EE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CB3602C1C248E3500B53EE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CB3602F1C248E3500B53EE0 /* FinancialTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FinancialTracker.xcdatamodel; sourceTree = "<group>"; };
-		4CB360311C248E3500B53EE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4CB360341C248E3500B53EE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CB360361C248E3500B53EE0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4CB360391C248E3500B53EE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				4CB3602C1C248E3500B53EE0 /* AppDelegate.swift */,
-				4CB360311C248E3500B53EE0 /* ViewController.swift */,
 				4CA261F31C28A4A8009B171D /* TabViewController.swift */,
 				4CA261F71C28AB33009B171D /* SummaryViewController.swift */,
 				4CA261F91C28AB51009B171D /* ComparisonViewController.swift */,
@@ -227,7 +224,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CA261F41C28A4A8009B171D /* TabViewController.swift in Sources */,
-				4CB360321C248E3500B53EE0 /* ViewController.swift in Sources */,
 				4CB360301C248E3500B53EE0 /* FinancialTracker.xcdatamodeld in Sources */,
 				4CB3602D1C248E3500B53EE0 /* AppDelegate.swift in Sources */,
 				4CA261F81C28AB33009B171D /* SummaryViewController.swift in Sources */,

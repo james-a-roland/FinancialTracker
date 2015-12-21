@@ -60,7 +60,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="AO6-Ba-8JW">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" systemItem="organize" id="zFU-EU-kNL"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="organize" id="zFU-EU-kNL">
+                            <connections>
+                                <action selector="presentSettingsViewController:" destination="PPe-9t-Nm7" id="lRI-Wj-mMM"/>
+                            </connections>
+                        </barButtonItem>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="JkU-Cr-tRS">
                             <rect key="frame" x="180" y="7" width="240" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -69,7 +73,11 @@
                                 <segment title="Second"/>
                             </segments>
                         </segmentedControl>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="8GX-oD-u8T"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="8GX-oD-u8T">
+                            <connections>
+                                <action selector="addNewTransaction:" destination="PPe-9t-Nm7" id="Iaq-AL-deX"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sCc-vC-jeZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -105,17 +113,15 @@
                     <view key="view" contentMode="scaleToFill" id="Tbu-CI-Idu">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Va-Tu-XHq" customClass="Compa">
-                                <rect key="frame" x="-11" y="-46" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="h0U-Jn-ZMC">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" systemItem="organize" id="Imw-IE-Rh6"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="stop" id="Imw-IE-Rh6">
+                            <connections>
+                                <action selector="presentSettingsViewController:" destination="rwE-MQ-2U3" id="5ii-c1-Jr7"/>
+                            </connections>
+                        </barButtonItem>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="Vcm-xg-eYV">
                             <rect key="frame" x="180" y="7" width="240" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -124,7 +130,11 @@
                                 <segment title="Fourth"/>
                             </segments>
                         </segmentedControl>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ajL-Z7-neP"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ajL-Z7-neP">
+                            <connections>
+                                <action selector="addNewTransaction:" destination="rwE-MQ-2U3" id="2fR-JM-dbK"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5FF-Rl-rwL" userLabel="First Responder" sceneMemberID="firstResponder"/>

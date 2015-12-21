@@ -10,10 +10,11 @@ import Foundation
 import UIKit
 
 class TabViewController : UIViewController {
-  @IBAction func presentSettingsViewController (sender: UIButton) {
+  func presentSettingsViewController() {
     print("Settings view controller")
   }
-  @IBAction func addNewTransaction (sender: UIButton) {
+  
+  func addNewTransaction() {
     print("Add new transaction")
   }
 }
