@@ -6,68 +6,296 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		36745287C182CCB4C9B6B8A13452792B /* XYPieChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D27366E491B37A2DADDA773EC9D1CB5 /* XYPieChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91D053E65EB3C1145C6C0F5DA55B018D /* Pods-FinancialTracker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D590C9C937DB9BE72861113EA3767C /* Pods-FinancialTracker-dummy.m */; };
+		A2EDD158516103257BB363D7E786E9AA /* XYPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 94222CD0501F58A4445C2B20C1A14DD5 /* XYPieChart.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BCA69F7C9292297472111C63B6648226 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
+		E05C19B6A68588FD33DDC81336C7298A /* XYPieChart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CF81AB4E9272DEF48AAFA11243FD88 /* XYPieChart-dummy.m */; };
+		EF074E299084D4ECB139BFDEB75DE422 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18F24645AA4D651DFC7B69A3A0833DB /* QuartzCore.framework */; };
+		F8DAC3CCB3E36541A6C0995FF5BF8868 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		915263A16B44910D29E976D864F10DFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAD8EB4F08158D081578D7AC7E4C5390;
+			remoteInfo = XYPieChart;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		41687557DD85723C05C6F076 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		064C84137DD0FF8116752AFCB471CD7D /* libXYPieChart.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libXYPieChart.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		348A6964E32D210944C759C1BAE7BBB9 /* XYPieChart.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XYPieChart.xcconfig; sourceTree = "<group>"; };
+		45CF81AB4E9272DEF48AAFA11243FD88 /* XYPieChart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XYPieChart-dummy.m"; sourceTree = "<group>"; };
+		53C2AFC056C4F550859D165493DBE923 /* Pods-FinancialTracker-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FinancialTracker-resources.sh"; sourceTree = "<group>"; };
+		5751EAACBDC4D81D9FECBD1BA25E5EC5 /* Pods-FinancialTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FinancialTracker.release.xcconfig"; sourceTree = "<group>"; };
+		5D27366E491B37A2DADDA773EC9D1CB5 /* XYPieChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XYPieChart.h; path = XYPieChart/XYPieChart.h; sourceTree = "<group>"; };
+		6D874BC7FE07A1517179B8D78442C2F5 /* XYPieChart-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XYPieChart-prefix.pch"; sourceTree = "<group>"; };
+		724ADD0EFF2D2782328F13679A70067A /* libPods-FinancialTracker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FinancialTracker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94222CD0501F58A4445C2B20C1A14DD5 /* XYPieChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XYPieChart.m; path = XYPieChart/XYPieChart.m; sourceTree = "<group>"; };
+		9521501B2C1F8B19862157DBB93E8E24 /* Pods-FinancialTracker-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FinancialTracker-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9A877B9CDEC8AEC9EF92F8A86DDD4B18 /* Pods-FinancialTracker-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FinancialTracker-frameworks.sh"; sourceTree = "<group>"; };
+		A15F408388D3C90B108C68B0B82617D0 /* Pods-FinancialTracker-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FinancialTracker-acknowledgements.plist"; sourceTree = "<group>"; };
+		ACAC856F69A681AE51FE74DE4C3FBF7C /* Pods-FinancialTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FinancialTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		B18F24645AA4D651DFC7B69A3A0833DB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C9D590C9C937DB9BE72861113EA3767C /* Pods-FinancialTracker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FinancialTracker-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFrameworksBuildPhase section */
+		12FDF3C1A2171740A2191896283B65BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8DAC3CCB3E36541A6C0995FF5BF8868 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0DE99AE3F1B7B5867EB8B9ECF17FDB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA69F7C9292297472111C63B6648226 /* Foundation.framework in Frameworks */,
+				EF074E299084D4ECB139BFDEB75DE422 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
-		55158AEDD771FFBE99EF0452 /* Frameworks */ = {
+		3926C638AD0708942C88C2BC89261735 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */,
+				B18F24645AA4D651DFC7B69A3A0833DB /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3926C638AD0708942C88C2BC89261735 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		79343441349EA5A18BAC0FCB /* Targets Support Files */ = {
+		578546FAB816A384EE768390F1210608 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				348A6964E32D210944C759C1BAE7BBB9 /* XYPieChart.xcconfig */,
+				45CF81AB4E9272DEF48AAFA11243FD88 /* XYPieChart-dummy.m */,
+				6D874BC7FE07A1517179B8D78442C2F5 /* XYPieChart-prefix.pch */,
 			);
-			name = "Targets Support Files";
+			name = "Support Files";
+			path = "../Target Support Files/XYPieChart";
 			sourceTree = "<group>";
 		};
-		7BEA291EBB691AFB5852D097 = {
+		6113C8FA95F82618B7319EF85F2A5592 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				41687557DD85723C05C6F076 /* Podfile */,
-				55158AEDD771FFBE99EF0452 /* Frameworks */,
-				EA1FDF169B223C5CC496A311 /* Products */,
-				79343441349EA5A18BAC0FCB /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		EA1FDF169B223C5CC496A311 /* Products */ = {
-			isa = PBXGroup;
-			children = (
+				724ADD0EFF2D2782328F13679A70067A /* libPods-FinancialTracker.a */,
+				064C84137DD0FF8116752AFCB471CD7D /* libXYPieChart.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
+		67D52F1C9E41110B40DEE77939FCEFE6 /* Pods-FinancialTracker */ = {
+			isa = PBXGroup;
+			children = (
+				9521501B2C1F8B19862157DBB93E8E24 /* Pods-FinancialTracker-acknowledgements.markdown */,
+				A15F408388D3C90B108C68B0B82617D0 /* Pods-FinancialTracker-acknowledgements.plist */,
+				C9D590C9C937DB9BE72861113EA3767C /* Pods-FinancialTracker-dummy.m */,
+				9A877B9CDEC8AEC9EF92F8A86DDD4B18 /* Pods-FinancialTracker-frameworks.sh */,
+				53C2AFC056C4F550859D165493DBE923 /* Pods-FinancialTracker-resources.sh */,
+				ACAC856F69A681AE51FE74DE4C3FBF7C /* Pods-FinancialTracker.debug.xcconfig */,
+				5751EAACBDC4D81D9FECBD1BA25E5EC5 /* Pods-FinancialTracker.release.xcconfig */,
+			);
+			name = "Pods-FinancialTracker";
+			path = "Target Support Files/Pods-FinancialTracker";
+			sourceTree = "<group>";
+		};
+		72CB70968E14173A2574B66F968F6D3E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				67D52F1C9E41110B40DEE77939FCEFE6 /* Pods-FinancialTracker */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7BAB755BE01F8CEEA4162A2A1689922C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED50D9E9021D659F1BC713FA2435A736 /* XYPieChart */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				7BAB755BE01F8CEEA4162A2A1689922C /* Pods */,
+				6113C8FA95F82618B7319EF85F2A5592 /* Products */,
+				72CB70968E14173A2574B66F968F6D3E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		ED50D9E9021D659F1BC713FA2435A736 /* XYPieChart */ = {
+			isa = PBXGroup;
+			children = (
+				5D27366E491B37A2DADDA773EC9D1CB5 /* XYPieChart.h */,
+				94222CD0501F58A4445C2B20C1A14DD5 /* XYPieChart.m */,
+				578546FAB816A384EE768390F1210608 /* Support Files */,
+			);
+			path = XYPieChart;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		B54FC26AE43D6324BBDC68BC363B0FFB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36745287C182CCB4C9B6B8A13452792B /* XYPieChart.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2BAA449B0A0E4A79F170588BA3C659D /* Pods-FinancialTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC0BAD862770FCDC22BA003713FDC884 /* Build configuration list for PBXNativeTarget "Pods-FinancialTracker" */;
+			buildPhases = (
+				729789E97FD6775E427D9CD7877E2A86 /* Sources */,
+				12FDF3C1A2171740A2191896283B65BB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF299675048E97C4E10B3DF335BF7FEC /* PBXTargetDependency */,
+			);
+			name = "Pods-FinancialTracker";
+			productName = "Pods-FinancialTracker";
+			productReference = 724ADD0EFF2D2782328F13679A70067A /* libPods-FinancialTracker.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EAD8EB4F08158D081578D7AC7E4C5390 /* XYPieChart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7F8804895A6A75D1E3CD3954BF91512 /* Build configuration list for PBXNativeTarget "XYPieChart" */;
+			buildPhases = (
+				E2D0EFF1BE7133680C3E72CACAAF2C3B /* Sources */,
+				F0DE99AE3F1B7B5867EB8B9ECF17FDB7 /* Frameworks */,
+				B54FC26AE43D6324BBDC68BC363B0FFB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XYPieChart;
+			productName = XYPieChart;
+			productReference = 064C84137DD0FF8116752AFCB471CD7D /* libXYPieChart.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
 /* Begin PBXProject section */
-		D21FDFC3C177D9B66E83A303 /* Project object */ = {
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 			};
-			buildConfigurationList = 42383BAB3688BFFE8621879C /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 7BEA291EBB691AFB5852D097;
-			productRefGroup = EA1FDF169B223C5CC496A311 /* Products */;
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 6113C8FA95F82618B7319EF85F2A5592 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				D2BAA449B0A0E4A79F170588BA3C659D /* Pods-FinancialTracker */,
+				EAD8EB4F08158D081578D7AC7E4C5390 /* XYPieChart */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXSourcesBuildPhase section */
+		729789E97FD6775E427D9CD7877E2A86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91D053E65EB3C1145C6C0F5DA55B018D /* Pods-FinancialTracker-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2D0EFF1BE7133680C3E72CACAAF2C3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E05C19B6A68588FD33DDC81336C7298A /* XYPieChart-dummy.m in Sources */,
+				A2EDD158516103257BB363D7E786E9AA /* XYPieChart.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF299675048E97C4E10B3DF335BF7FEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XYPieChart;
+			target = EAD8EB4F08158D081578D7AC7E4C5390 /* XYPieChart */;
+			targetProxy = 915263A16B44910D29E976D864F10DFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		BE0D5E6E30EC248EF8E2DD2B /* Debug */ = {
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -106,53 +334,107 @@
 			};
 			name = Debug;
 		};
-		E7C8A7C68C4EA3A073A15BE0 /* Release */ = {
+		863FA67B6D5B00C40EA575887F59FA93 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACAC856F69A681AE51FE74DE4C3FBF7C /* Pods-FinancialTracker.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BAB236529913710EAF9E55E6254BF94B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 348A6964E32D210944C759C1BAE7BBB9 /* XYPieChart.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/XYPieChart/XYPieChart-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
+		};
+		D3ED50DF13FCDD7DD7253A3B6B581E60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5751EAACBDC4D81D9FECBD1BA25E5EC5 /* Pods-FinancialTracker.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F6541F259A187E26D8198E1BBD0293B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 348A6964E32D210944C759C1BAE7BBB9 /* XYPieChart.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/XYPieChart/XYPieChart-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		42383BAB3688BFFE8621879C /* Build configuration list for PBXProject "Pods" */ = {
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BE0D5E6E30EC248EF8E2DD2B /* Debug */,
-				E7C8A7C68C4EA3A073A15BE0 /* Release */,
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC0BAD862770FCDC22BA003713FDC884 /* Build configuration list for PBXNativeTarget "Pods-FinancialTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				863FA67B6D5B00C40EA575887F59FA93 /* Debug */,
+				D3ED50DF13FCDD7DD7253A3B6B581E60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7F8804895A6A75D1E3CD3954BF91512 /* Build configuration list for PBXNativeTarget "XYPieChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6541F259A187E26D8198E1BBD0293B1 /* Debug */,
+				BAB236529913710EAF9E55E6254BF94B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D21FDFC3C177D9B66E83A303 /* Project object */;
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 }
