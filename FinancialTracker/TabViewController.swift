@@ -11,7 +11,8 @@ import UIKit
 
 class TabViewController : UIViewController {
   func presentSettingsViewController() {
-    print("Settings view controller")
+    let svc = SettingsViewController()
+    self.navigationController?.presentViewController(svc, animated: true, completion: nil)
   }
   
   func addNewTransaction() {

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4C764F2A1C28E9DD007E7FED /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C764F291C28E9DD007E7FED /* SummaryViewController.swift */; };
+		4C764F2F1C28EC26007E7FED /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C764F2D1C28EC26007E7FED /* SettingsViewController.swift */; };
+		4C764F301C28EC26007E7FED /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C764F2E1C28EC26007E7FED /* SettingsViewController.xib */; };
 		4CA261F41C28A4A8009B171D /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA261F31C28A4A8009B171D /* TabViewController.swift */; };
 		4CA261FA1C28AB51009B171D /* ComparisonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA261F91C28AB51009B171D /* ComparisonViewController.swift */; };
 		4CB3602D1C248E3500B53EE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB3602C1C248E3500B53EE0 /* AppDelegate.swift */; };
@@ -32,6 +34,8 @@
 /* Begin PBXFileReference section */
 		3596E3461D65DF5458B07FC5 /* Pods-FinancialTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinancialTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinancialTracker/Pods-FinancialTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		4C764F291C28E9DD007E7FED /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		4C764F2D1C28EC26007E7FED /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		4C764F2E1C28EC26007E7FED /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		4CA261F31C28A4A8009B171D /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		4CA261F91C28AB51009B171D /* ComparisonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComparisonViewController.swift; sourceTree = "<group>"; };
 		4CB360271C248E3500B53EE0 /* FinancialTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinancialTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +105,8 @@
 			children = (
 				4CB3602C1C248E3500B53EE0 /* AppDelegate.swift */,
 				4CA261F31C28A4A8009B171D /* TabViewController.swift */,
+				4C764F2D1C28EC26007E7FED /* SettingsViewController.swift */,
+				4C764F2E1C28EC26007E7FED /* SettingsViewController.xib */,
 				4C764F291C28E9DD007E7FED /* SummaryViewController.swift */,
 				4CA261F91C28AB51009B171D /* ComparisonViewController.swift */,
 				4CB360331C248E3500B53EE0 /* Main.storyboard */,
@@ -232,6 +238,7 @@
 				4CB360351C248E3500B53EE0 /* Main.storyboard in Resources */,
 				4CB3603A1C248E3500B53EE0 /* LaunchScreen.xib in Resources */,
 				4CB360371C248E3500B53EE0 /* Images.xcassets in Resources */,
+				4C764F301C28EC26007E7FED /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +294,7 @@
 				4CB3602D1C248E3500B53EE0 /* AppDelegate.swift in Sources */,
 				4CA261FA1C28AB51009B171D /* ComparisonViewController.swift in Sources */,
 				4C764F2A1C28E9DD007E7FED /* SummaryViewController.swift in Sources */,
+				4C764F2F1C28EC26007E7FED /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
