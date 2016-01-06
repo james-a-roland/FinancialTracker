@@ -16,6 +16,7 @@
 		4C764F301C28EC26007E7FED /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C764F2E1C28EC26007E7FED /* SettingsViewController.xib */; };
 		4C9EF8211C399ECE00B47434 /* NSUserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9EF8201C399ECE00B47434 /* NSUserDefaultsExtension.swift */; };
 		4C9EF8221C399ED300B47434 /* NSUserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9EF8201C399ECE00B47434 /* NSUserDefaultsExtension.swift */; };
+		4CA0E33E1C3DCE0C0033592B /* CategoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0E33D1C3DCE0C0033592B /* CategoryTests.swift */; };
 		4CA261F41C28A4A8009B171D /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA261F31C28A4A8009B171D /* TabViewController.swift */; };
 		4CA261FA1C28AB51009B171D /* ComparisonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA261F91C28AB51009B171D /* ComparisonViewController.swift */; };
 		4CB3602D1C248E3500B53EE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB3602C1C248E3500B53EE0 /* AppDelegate.swift */; };
@@ -46,6 +47,7 @@
 		4C764F2D1C28EC26007E7FED /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		4C764F2E1C28EC26007E7FED /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		4C9EF8201C399ECE00B47434 /* NSUserDefaultsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSUserDefaultsExtension.swift; sourceTree = "<group>"; };
+		4CA0E33D1C3DCE0C0033592B /* CategoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTests.swift; sourceTree = "<group>"; };
 		4CA261F31C28A4A8009B171D /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		4CA261F91C28AB51009B171D /* ComparisonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComparisonViewController.swift; sourceTree = "<group>"; };
 		4CB360271C248E3500B53EE0 /* FinancialTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinancialTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -184,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				4CB360451C248E3500B53EE0 /* FinancialTrackerTests.swift */,
+				4CA0E33D1C3DCE0C0033592B /* CategoryTests.swift */,
 				4CB360431C248E3500B53EE0 /* Supporting Files */,
 			);
 			path = FinancialTrackerTests;
@@ -363,6 +366,7 @@
 				4CB360461C248E3500B53EE0 /* FinancialTrackerTests.swift in Sources */,
 				4C9EF8221C399ED300B47434 /* NSUserDefaultsExtension.swift in Sources */,
 				4C3F264A1C3989A200BC48ED /* Category.swift in Sources */,
+				4CA0E33E1C3DCE0C0033592B /* CategoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
