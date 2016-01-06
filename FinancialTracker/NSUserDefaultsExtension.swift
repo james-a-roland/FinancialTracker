@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+extension NSUserDefaults {
+
+  static func resetStandardDefaults() {
+    let defaults = NSUserDefaults.standardUserDefaults()
+    let defaultsDictionary = defaults.dictionaryRepresentation()
+    for (key, _) in defaultsDictionary {
+      defaults.removeObjectForKey(key)
+    }
+    defaults.synchronize()
+  }
+}

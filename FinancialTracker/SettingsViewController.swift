@@ -10,29 +10,73 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+  static let cellReuseIdentifier = "SettingsViewControllerCell"
 
-        // Do any additional setup after loading the view.
-    }
+  @IBOutlet var categoryTable: UITableView!
+  @IBOutlet var categoryField: UITextField!
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    @IBAction func dismiss() {
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
+  override func viewDidLoad() {
+    super.viewDidLoad()
+  }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
 
 }
+
+extension SettingsViewController {
+
+  @IBAction func dismiss() {
+    self.dismissViewControllerAnimated(true, completion: nil)
+  }
+
+  @IBAction func editTableView() {
+    categoryTable.setEditing(!categoryTable.editing, animated: true)
+  }
+
+  @IBAction func addCategory() {
+    if let name = categoryField.text {
+      let newCategory = Category(categoryName: name)
+      Category.addCategory(newCategory)
+
+      categoryTable.reloadData()
+    }
+  }
+
+}
+
+extension SettingsViewController: UITableViewDataSource {
+  func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return Category.Categories().count
+  }
+
+  func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: 
+    SettingsViewController.cellReuseIdentifier)
+
+    if let category = Category.Categories().objectAtIndex(indexPath.row) as? Category {
+      cell.textLabel?.text = category.name
+    }
+
+    return cell
+  }
+
+  func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+    if (editingStyle == UITableViewCellEditingStyle.Delete) {
+      if let category = Category.Categories().objectAtIndex(indexPath.row) as? Category {
+        Category.removeCategory(category)
+
+        categoryTable.reloadData()
+      }
+    }
+  }
+
+}
+
+extension SettingsViewController: UITableViewDelegate {
+
+}
+
+

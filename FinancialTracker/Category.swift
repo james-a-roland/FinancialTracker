@@ -8,27 +8,31 @@
 
 import Foundation
 
-class Category: NSCoding {
+class Category: NSObject, NSCoding {
 
   let name: String
 
   private static let defaults = NSUserDefaults.standardUserDefaults()
   private static let categoryUserDefaultsKey = "categories"
   private static let nameKey = "name"
+  private static let undefinedCategoryTitle = "Undefined"
 
-  init(categoryName: String) {
-    name = categoryName
+
+  init (categoryName: String?) {
+    if let nm = categoryName {
+      name = nm
+    } else {
+      name = ""
+    }
+
     super.init()
   }
 
-  required convenience init?(coder aDecoder: NSCoder) {
-    if let name = aDecoder.decodeObjectForKey(Category.nameKey) as? String {
-      self.init(categoryName: name)
-    }
-    return nil
+  @objc convenience required init?(coder aDecoder: NSCoder) {
+    self.init(categoryName: aDecoder.decodeObjectForKey(Category.nameKey) as? String)
   }
 
-  override func encodeWithCoder(aCoder: NSCoder) {
+  @objc func encodeWithCoder(aCoder: NSCoder) {
     aCoder.encodeObject(name, forKey: Category.nameKey)
   }
 
@@ -54,7 +58,7 @@ extension Category {
     }
 
     //Create an empty category by default.
-    let undefinedCategory = Category(categoryName: "Undefined")
+    let undefinedCategory = Category(categoryName: undefinedCategoryTitle)
 
     let data = NSKeyedArchiver.archivedDataWithRootObject(undefinedCategory)
     defaults.setObject(data, forKey: categoryUserDefaultsKey)
@@ -64,15 +68,17 @@ extension Category {
   }
 
   static func removeCategory(category: Category) {
-    let categories = Categories().mutableCopy()
-    categories.removeObject(category)
+    if let categories = Categories().mutableCopy() as? NSMutableArray {
+      categories.removeObject(category)
 
-    defaults.setObject(categories, forKey: categoryUserDefaultsKey)
-    defaults.synchronize()
+      let data = NSKeyedArchiver.archivedDataWithRootObject(categories)
+      defaults.setObject(data, forKey: categoryUserDefaultsKey)
+      defaults.synchronize()
+    }
   }
 
   static func addCategory(category: Category) {
-    if category.isUnique() {
+    if category.isUnique() && !category.name.isEmpty {
       if let categories = Categories().mutableCopy() as? NSMutableArray {
         categories.addObject(category)
 
@@ -81,6 +87,12 @@ extension Category {
         defaults.synchronize()
       }
     }
+  }
+
+  private static func saveToUserDefaults(object: AnyObject) {
+    let data = NSKeyedArchiver.archivedDataWithRootObject(object)
+    defaults.setObject(data, forKey: categoryUserDefaultsKey)
+    defaults.synchronize()
   }
 
 }
