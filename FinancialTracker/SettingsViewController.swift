@@ -14,6 +14,7 @@ class SettingsViewController: UIViewController {
 
   @IBOutlet var categoryTable: UITableView!
   @IBOutlet var categoryField: UITextField!
+  @IBOutlet var addCategoryButton: UIButton!
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -34,6 +35,9 @@ extension SettingsViewController {
 
   @IBAction func editTableView() {
     categoryTable.setEditing(!categoryTable.editing, animated: true)
+    categoryField.enabled = !categoryField.enabled
+    addCategoryButton.enabled = !addCategoryButton.enabled
+
   }
 
   @IBAction func addCategory() {
@@ -76,6 +80,13 @@ extension SettingsViewController: UITableViewDataSource {
 }
 
 extension SettingsViewController: UITableViewDelegate {
+
+  func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+    if let category = Category.Categories().objectAtIndex(indexPath.row) as? Category where category.name == Category.undefinedCategoryTitle {
+      return false
+    }
+    return true
+  }
 
 }
 

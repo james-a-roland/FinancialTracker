@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsViewController" customModule="FinancialTracker" customModuleProvider="target">
             <connections>
+                <outlet property="addCategoryButton" destination="B3J-Jk-0Uh" id="v5p-py-Mrs"/>
                 <outlet property="categoryField" destination="vbv-Wq-pQC" id="oAi-aE-e0a"/>
                 <outlet property="categoryTable" destination="IqH-sC-K0v" id="5Yd-Dg-R2k"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
