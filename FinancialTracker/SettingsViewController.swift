@@ -82,7 +82,8 @@ extension SettingsViewController: UITableViewDataSource {
 extension SettingsViewController: UITableViewDelegate {
 
   func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-    if let category = Category.Categories().objectAtIndex(indexPath.row) as? Category where category.name == Category.undefinedCategoryTitle {
+    if let category = Category.Categories().objectAtIndex(indexPath.row) as? Category
+      where category.name == Category.undefinedCategoryTitle || category.name == Category.incomeCategoryTitle {
       return false
     }
     return true

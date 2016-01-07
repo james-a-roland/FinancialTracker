@@ -12,6 +12,7 @@ class Category: NSObject, NSCoding {
 
   let name: String
   static let undefinedCategoryTitle = "Undefined"
+  static let incomeCategoryTitle = "Income"
 
   private static let defaults = NSUserDefaults.standardUserDefaults()
   private static let categoryUserDefaultsKey = "categories"
@@ -57,15 +58,19 @@ extension Category {
       return categories
     }
 
-    //Create an empty category by default.
+    //Create two empty categories by default.
     let undefinedCategory = Category(categoryName: undefinedCategoryTitle)
-    archiveUserDefaultsObject(undefinedCategory)
+    let incomeCategory = Category(categoryName: incomeCategoryTitle)
+    let categories = NSMutableArray()
+    categories.addObject(undefinedCategory)
+    categories.addObject(incomeCategory)
+    archiveUserDefaultsObject(categories)
 
-    return NSArray(object: undefinedCategory)
+    return categories as NSArray
   }
 
   static func removeCategory(category: Category) {
-    if category.name == undefinedCategoryTitle {
+    if category.name == undefinedCategoryTitle || category.name == incomeCategoryTitle {
       return
     }
 
@@ -80,7 +85,7 @@ extension Category {
   }
 
   static func addCategory(category: Category) {
-    if category.name == undefinedCategoryTitle {
+    if category.name == undefinedCategoryTitle || category.name == incomeCategoryTitle {
       return
     }
 

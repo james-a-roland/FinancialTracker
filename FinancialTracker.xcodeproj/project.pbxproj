@@ -17,6 +17,7 @@
 		4C9EF8211C399ECE00B47434 /* NSUserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9EF8201C399ECE00B47434 /* NSUserDefaultsExtension.swift */; };
 		4C9EF8221C399ED300B47434 /* NSUserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9EF8201C399ECE00B47434 /* NSUserDefaultsExtension.swift */; };
 		4CA0E33E1C3DCE0C0033592B /* CategoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0E33D1C3DCE0C0033592B /* CategoryTests.swift */; };
+		4CA0E3401C3DD26B0033592B /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0E33F1C3DD26B0033592B /* Transaction.swift */; };
 		4CA261F41C28A4A8009B171D /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA261F31C28A4A8009B171D /* TabViewController.swift */; };
 		4CA261FA1C28AB51009B171D /* ComparisonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA261F91C28AB51009B171D /* ComparisonViewController.swift */; };
 		4CB3602D1C248E3500B53EE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB3602C1C248E3500B53EE0 /* AppDelegate.swift */; };
@@ -48,6 +49,7 @@
 		4C764F2E1C28EC26007E7FED /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		4C9EF8201C399ECE00B47434 /* NSUserDefaultsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSUserDefaultsExtension.swift; sourceTree = "<group>"; };
 		4CA0E33D1C3DCE0C0033592B /* CategoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTests.swift; sourceTree = "<group>"; };
+		4CA0E33F1C3DD26B0033592B /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		4CA261F31C28A4A8009B171D /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		4CA261F91C28AB51009B171D /* ComparisonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComparisonViewController.swift; sourceTree = "<group>"; };
 		4CB360271C248E3500B53EE0 /* FinancialTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinancialTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				4C1AA7031C383A2200384B5B /* Category.swift */,
+				4CA0E33F1C3DD26B0033592B /* Transaction.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				4CB360301C248E3500B53EE0 /* FinancialTracker.xcdatamodeld in Sources */,
 				4CB3602D1C248E3500B53EE0 /* AppDelegate.swift in Sources */,
 				4C36EF1C1C2F754C006D54AF /* NewTransactionViewController.swift in Sources */,
+				4CA0E3401C3DD26B0033592B /* Transaction.swift in Sources */,
 				4CA261FA1C28AB51009B171D /* ComparisonViewController.swift in Sources */,
 				4C764F2A1C28E9DD007E7FED /* SummaryViewController.swift in Sources */,
 				4C764F2F1C28EC26007E7FED /* SettingsViewController.swift in Sources */,

@@ -21,9 +21,10 @@ class CategoryTests: XCTestCase {
 
   func setupCategories() {
     NSUserDefaults.resetStandardDefaults()
-    assert(Category.Categories().count == 1)
+    print(Category.Categories().count)
+    assert(Category.Categories().count == 2)
 
-    let categoryNames = ["abc", "123", "Undefined", "", "abc"]
+    let categoryNames = ["abc", "123", "Undefined", "", "abc", "Income"]
 
     for categoryName in categoryNames {
       let category = Category(categoryName: categoryName)
@@ -33,7 +34,7 @@ class CategoryTests: XCTestCase {
 
   func testAddCategory() {
     setupCategories()
-    assert(Category.Categories().count == 3)
+    assert(Category.Categories().count == 4)
   }
 
   func testRemoveCategory() {
@@ -42,11 +43,15 @@ class CategoryTests: XCTestCase {
 
     for _ in (0...2) {
       Category.removeCategory(removedCategory)
-      assert(Category.Categories().count == 2)
+      assert(Category.Categories().count == 3)
 
-      let permanentCategory = Category(categoryName: "Undefined")
-      Category.removeCategory(permanentCategory)
-      assert(Category.Categories().count == 2)
+      let undefinedCategory = Category(categoryName: "Undefined")
+      Category.removeCategory(undefinedCategory)
+      assert(Category.Categories().count == 3)
+
+      let incomeCategory = Category(categoryName: "Undefined")
+      Category.removeCategory(incomeCategory)
+      assert(Category.Categories().count == 3)
     }
 
 
