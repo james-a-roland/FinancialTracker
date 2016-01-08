@@ -43,8 +43,7 @@ extension SettingsViewController {
   @IBAction func addCategory() {
     if let name = categoryField.text {
       let newCategory = Category(categoryName: name)
-      Category.addCategory(newCategory)
-
+      Category.addObject(newCategory)
       categoryTable.reloadData()
     }
   }
@@ -53,14 +52,14 @@ extension SettingsViewController {
 
 extension SettingsViewController: UITableViewDataSource {
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return Category.Categories().count
+    return Category.allObjects().count
   }
 
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: 
     SettingsViewController.cellReuseIdentifier)
 
-    if let category = Category.Categories().objectAtIndex(indexPath.row) as? Category {
+    if let category = (Category.allObjects("name"))[indexPath.row] as? Category {
       cell.textLabel?.text = category.name
     }
 
@@ -69,9 +68,8 @@ extension SettingsViewController: UITableViewDataSource {
 
   func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
     if (editingStyle == UITableViewCellEditingStyle.Delete) {
-      if let category = Category.Categories().objectAtIndex(indexPath.row) as? Category {
-        Category.removeCategory(category)
-
+      if let category = (Category.allObjects("name"))[indexPath.row] as? Category {
+        Category.removeObject(category)
         categoryTable.reloadData()
       }
     }
@@ -82,10 +80,10 @@ extension SettingsViewController: UITableViewDataSource {
 extension SettingsViewController: UITableViewDelegate {
 
   func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-    if let category = Category.Categories().objectAtIndex(indexPath.row) as? Category
-      where category.name == Category.undefinedCategoryTitle || category.name == Category.incomeCategoryTitle {
-      return false
-    }
+//    if let category = Category.Categories().objectAtIndex(indexPath.row) as? Category
+//      where category.name == Category.undefinedCategoryTitle || category.name == Category.incomeCategoryTitle {
+//      return false
+//    }
     return true
   }
 

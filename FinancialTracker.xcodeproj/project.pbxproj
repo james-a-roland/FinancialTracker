@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C1AA7041C383A2200384B5B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1AA7031C383A2200384B5B /* Category.swift */; };
 		4C36EF1C1C2F754C006D54AF /* NewTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C36EF1A1C2F754C006D54AF /* NewTransactionViewController.swift */; };
 		4C36EF1D1C2F754C006D54AF /* NewTransactionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C36EF1B1C2F754C006D54AF /* NewTransactionViewController.xib */; };
-		4C3F264A1C3989A200BC48ED /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1AA7031C383A2200384B5B /* Category.swift */; };
+		4C3A364F1C42C1EF005A0473 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A364B1C42C1EF005A0473 /* Category+CoreDataProperties.swift */; };
+		4C3A36501C42C1EF005A0473 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A364C1C42C1EF005A0473 /* Category.swift */; };
+		4C3A36511C42C1EF005A0473 /* Transaction+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A364D1C42C1EF005A0473 /* Transaction+CoreDataProperties.swift */; };
+		4C3A36521C42C1EF005A0473 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A364E1C42C1EF005A0473 /* Transaction.swift */; };
+		4C3A36541C42C83D005A0473 /* CoreDataResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A36531C42C83D005A0473 /* CoreDataResource.swift */; };
+		4C3A36581C42E6E6005A0473 /* CoreDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A36571C42E6E6005A0473 /* CoreDataObject.swift */; };
+		4C65D4421C4380820093D5F6 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C65D4411C4380820093D5F6 /* Array.swift */; };
 		4C764F2A1C28E9DD007E7FED /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C764F291C28E9DD007E7FED /* SummaryViewController.swift */; };
 		4C764F2F1C28EC26007E7FED /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C764F2D1C28EC26007E7FED /* SettingsViewController.swift */; };
 		4C764F301C28EC26007E7FED /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C764F2E1C28EC26007E7FED /* SettingsViewController.xib */; };
 		4C9EF8211C399ECE00B47434 /* NSUserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9EF8201C399ECE00B47434 /* NSUserDefaultsExtension.swift */; };
 		4C9EF8221C399ED300B47434 /* NSUserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9EF8201C399ECE00B47434 /* NSUserDefaultsExtension.swift */; };
 		4CA0E33E1C3DCE0C0033592B /* CategoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0E33D1C3DCE0C0033592B /* CategoryTests.swift */; };
-		4CA0E3401C3DD26B0033592B /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0E33F1C3DD26B0033592B /* Transaction.swift */; };
 		4CA261F41C28A4A8009B171D /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA261F31C28A4A8009B171D /* TabViewController.swift */; };
 		4CA261FA1C28AB51009B171D /* ComparisonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA261F91C28AB51009B171D /* ComparisonViewController.swift */; };
 		4CB3602D1C248E3500B53EE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB3602C1C248E3500B53EE0 /* AppDelegate.swift */; };
@@ -41,15 +45,20 @@
 
 /* Begin PBXFileReference section */
 		3596E3461D65DF5458B07FC5 /* Pods-FinancialTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinancialTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinancialTracker/Pods-FinancialTracker.debug.xcconfig"; sourceTree = "<group>"; };
-		4C1AA7031C383A2200384B5B /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		4C36EF1A1C2F754C006D54AF /* NewTransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTransactionViewController.swift; sourceTree = "<group>"; };
 		4C36EF1B1C2F754C006D54AF /* NewTransactionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewTransactionViewController.xib; sourceTree = "<group>"; };
+		4C3A364B1C42C1EF005A0473 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4C3A364C1C42C1EF005A0473 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		4C3A364D1C42C1EF005A0473 /* Transaction+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Transaction+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4C3A364E1C42C1EF005A0473 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		4C3A36531C42C83D005A0473 /* CoreDataResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataResource.swift; sourceTree = "<group>"; };
+		4C3A36571C42E6E6005A0473 /* CoreDataObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataObject.swift; sourceTree = "<group>"; };
+		4C65D4411C4380820093D5F6 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		4C764F291C28E9DD007E7FED /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		4C764F2D1C28EC26007E7FED /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		4C764F2E1C28EC26007E7FED /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		4C9EF8201C399ECE00B47434 /* NSUserDefaultsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSUserDefaultsExtension.swift; sourceTree = "<group>"; };
 		4CA0E33D1C3DCE0C0033592B /* CategoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTests.swift; sourceTree = "<group>"; };
-		4CA0E33F1C3DD26B0033592B /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		4CA261F31C28A4A8009B171D /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		4CA261F91C28AB51009B171D /* ComparisonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComparisonViewController.swift; sourceTree = "<group>"; };
 		4CB360271C248E3500B53EE0 /* FinancialTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinancialTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,8 +106,13 @@
 		4C1AA7011C3839FF00384B5B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4C1AA7031C383A2200384B5B /* Category.swift */,
-				4CA0E33F1C3DD26B0033592B /* Transaction.swift */,
+				4C3A36531C42C83D005A0473 /* CoreDataResource.swift */,
+				4C3A36571C42E6E6005A0473 /* CoreDataObject.swift */,
+				4C3A364B1C42C1EF005A0473 /* Category+CoreDataProperties.swift */,
+				4C3A364C1C42C1EF005A0473 /* Category.swift */,
+				4C3A364D1C42C1EF005A0473 /* Transaction+CoreDataProperties.swift */,
+				4C3A364E1C42C1EF005A0473 /* Transaction.swift */,
+				4CB3602E1C248E3500B53EE0 /* FinancialTracker.xcdatamodeld */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -138,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				4C9EF8201C399ECE00B47434 /* NSUserDefaultsExtension.swift */,
+				4C65D4411C4380820093D5F6 /* Array.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -171,7 +186,6 @@
 				4C1AA7011C3839FF00384B5B /* Model */,
 				4CB360361C248E3500B53EE0 /* Images.xcassets */,
 				4CB360381C248E3500B53EE0 /* LaunchScreen.xib */,
-				4CB3602E1C248E3500B53EE0 /* FinancialTracker.xcdatamodeld */,
 				4CB3602A1C248E3500B53EE0 /* Supporting Files */,
 			);
 			path = FinancialTracker;
@@ -351,15 +365,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CA261F41C28A4A8009B171D /* TabViewController.swift in Sources */,
+				4C3A36581C42E6E6005A0473 /* CoreDataObject.swift in Sources */,
+				4C3A36501C42C1EF005A0473 /* Category.swift in Sources */,
+				4C3A36521C42C1EF005A0473 /* Transaction.swift in Sources */,
+				4C3A364F1C42C1EF005A0473 /* Category+CoreDataProperties.swift in Sources */,
 				4CB360301C248E3500B53EE0 /* FinancialTracker.xcdatamodeld in Sources */,
+				4C65D4421C4380820093D5F6 /* Array.swift in Sources */,
 				4CB3602D1C248E3500B53EE0 /* AppDelegate.swift in Sources */,
 				4C36EF1C1C2F754C006D54AF /* NewTransactionViewController.swift in Sources */,
-				4CA0E3401C3DD26B0033592B /* Transaction.swift in Sources */,
+				4C3A36541C42C83D005A0473 /* CoreDataResource.swift in Sources */,
+				4C3A36511C42C1EF005A0473 /* Transaction+CoreDataProperties.swift in Sources */,
 				4CA261FA1C28AB51009B171D /* ComparisonViewController.swift in Sources */,
 				4C764F2A1C28E9DD007E7FED /* SummaryViewController.swift in Sources */,
 				4C764F2F1C28EC26007E7FED /* SettingsViewController.swift in Sources */,
 				4C9EF8211C399ECE00B47434 /* NSUserDefaultsExtension.swift in Sources */,
-				4C1AA7041C383A2200384B5B /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,7 +388,6 @@
 			files = (
 				4CB360461C248E3500B53EE0 /* FinancialTrackerTests.swift in Sources */,
 				4C9EF8221C399ED300B47434 /* NSUserDefaultsExtension.swift in Sources */,
-				4C3F264A1C3989A200BC48ED /* Category.swift in Sources */,
 				4CA0E33E1C3DCE0C0033592B /* CategoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
